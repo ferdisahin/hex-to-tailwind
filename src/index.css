@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-Poppins
+}
+
+html,body, #root {
+  @apply h-full
+}
+
+#root {
+  @apply flex flex-col items-center py-20
+}
