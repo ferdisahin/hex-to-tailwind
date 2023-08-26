@@ -85,7 +85,7 @@ function App() {
   }, [copySuccess])
 
   return (
-    <div className="flex flex-col gap-y-5 items-center justify-center w-1/2 p-10 rounded-lg border border-gray-200 bg-gray-100">
+    <div className="flex flex-col gap-y-5 items-center justify-center w-4/5 lg:w-1/2 p-10 rounded-lg border border-gray-200 bg-gray-100">
 
         {copySuccess && (
           <div className="fixed top-5 right-5 p-5 rounded-lg bg-green-500 text-white font-semibold text-xs">
@@ -96,7 +96,7 @@ function App() {
         <div className="font-bold text-4xl mb-10">HEX to Tailwind</div>
 
         <input 
-          className="w-96 h-10 border-2 border-gray-200 rounded-lg !ring-0 !outline-none px-2" 
+          className="w-full h-10 border-2 border-gray-200 rounded-lg !ring-0 !outline-none px-2" 
           type="text" 
           placeholder="HEX Code"
           value={inputValue} onChange={handleInputChange}
